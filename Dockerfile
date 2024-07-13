@@ -1,4 +1,4 @@
-FROM python:3.8-slim
-RUN pip install --no-cache notebook jupyterlab
+FROM python:3.12-slim
+RUN pip install --no-cache notebook jupyterlab jupyterhub
 RUN useradd -m jovyan
 USER jovyan
